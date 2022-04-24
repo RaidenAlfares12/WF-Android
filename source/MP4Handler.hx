@@ -210,7 +210,6 @@ class MP4Handler
 	}
 
 	// old html5 player
-	/*
 		var nc:NetConnection = new NetConnection();
 		nc.connect(null);
 		var ns:NetStream = new NetStream(nc);
@@ -221,6 +220,5 @@ class MP4Handler
 		ns.play(path);
 		return myVideo;
 		ns.close();
-	 */
 }
 */
