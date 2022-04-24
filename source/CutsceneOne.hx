@@ -2,7 +2,6 @@
 
 package;
 
-import polymod.format.ParseRules.PlainTextParseFormat;
 import haxe.display.JsonModuleTypes.JsonTypeParameters;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -24,7 +23,6 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
 
