@@ -169,7 +169,7 @@ class WarningState extends MusicBeatState
 		// DEBUG BULLSHIT
 		
                 #if android
-                addVirtualPad(FULL, A);
+                addVirtualPad(FULL, X);
                 #end
                 
 		super.create();
@@ -239,7 +239,7 @@ class WarningState extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 
-		if(controls.ACCEPT.justPressed)
+		if(FlxG.keys.justPressed.X #if android || _virtualpad.buttonX.justPressed #end)
 		{
 		
 
