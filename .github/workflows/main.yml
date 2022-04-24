@@ -59,7 +59,6 @@ jobs:
           haxelib install flixel-addons 2.10.0 --quiet
           haxelib install hscript --quiet
           haxelib git linc_luajit https://github.com/jigsaw-4277821/linc_luajit.git --quiet 
-          haxelib install newgrounds
           haxelib list
           
       - name: Build Log
