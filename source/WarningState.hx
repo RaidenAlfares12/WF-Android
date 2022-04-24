@@ -167,7 +167,11 @@ class WarningState extends MusicBeatState
 		
 
 		// DEBUG BULLSHIT
-
+		
+                #if android
+                addVirtualPad(FULL, A);
+                #end
+                
 		super.create();
 
 		// NGio.noLogin(APIStuff.API);
@@ -235,7 +239,7 @@ class WarningState extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 
-		if(FlxG.keys.justPressed.X)
+		if(controls.ACCEPT.justPressed)
 		{
 		
 
