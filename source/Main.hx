@@ -77,6 +77,10 @@ class Main extends Sprite
 
 		SUtil.doTheCheck();
 
+		#if !debug
+		initialState = WarningState; //CHANGE THIS TO BIRDY MENU LOL
+		#end
+
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
 
 		addChild(game);
