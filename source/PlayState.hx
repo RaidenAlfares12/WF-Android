@@ -159,7 +159,7 @@ class PlayState extends MusicBeatState
 
 	public var iconP1:HealthIcon; //making these public again because i may be stupid
 	public var iconP2:HealthIcon; //what could go wrong?
-	public static var camHUD:FlxCamera;
+	public var camHUD:FlxCamera;
 	public var myCAM:FlxCamera;
 	private var camGame:FlxCamera;
 
@@ -2271,7 +2271,7 @@ class PlayState extends MusicBeatState
 
 		// Per song offset check
 		#if windows
-			var songPath = 'assets/data/' + PlayState.SONG.song.toLowerCase() + '/';
+			var songPath = SUtil.getPath() + 'assets/data/' + PlayState.SONG.song.toLowerCase() + '/';
 			for(file in sys.FileSystem.readDirectory(songPath))
 			{
 				var path = haxe.io.Path.join([songPath, file]);
