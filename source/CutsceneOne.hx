@@ -101,21 +101,24 @@ class CutsceneOne extends MusicBeatState
 
 
 
-		/*var video:MP4Handler = new MP4Handler();
-		video.playMP4(Paths.video('cut1'), new PlayState(), lines, false, false, false);*/
+		var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+		bg.scrollFactor.set();
+		bg.cameras = [camHUD];
+		add(bg);
+		new FlxVideo(Paths.video('cut1'), new PlayState(), lines, false, false, false);
 		
 
 
 
-		//new FlxTimer().start(100, function(tmr:FlxTimer)
-		//{
-			//PlayState.SONG = Song.loadFromJson("nightshift","nightshift");
-            //PlayState.isStoryMode = true;
-			//PlayState.storyDifficulty = 1;
+		new FlxTimer().start(100, function(tmr:FlxTimer)
+		{
+			PlayState.SONG = Song.loadFromJson("nightshift","nightshift");
+            PlayState.isStoryMode = true;
+			PlayState.storyDifficulty = 1;
 
-			//PlayState.storyWeek = 2;
-			//LoadingState.loadAndSwitchState(new PlayState());
-		//});
+			PlayState.storyWeek = 2;
+			LoadingState.loadAndSwitchState(new PlayState());
+		});
 		
 		
 		
