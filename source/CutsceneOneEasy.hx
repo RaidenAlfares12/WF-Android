@@ -105,7 +105,7 @@ class CutsceneOneEasy extends MusicBeatState
 		bg.scrollFactor.set();
 		bg.cameras = [camHUD];
 		add(bg);
-		video.playMP4(Paths.video('cut1'), new PlayState(), lines, false, false, false);
+		new FlxVideo(Paths.video('cut1'), new PlayState(), lines, false, false, false);
 		
 		
 		
