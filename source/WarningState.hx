@@ -235,7 +235,7 @@ class WarningState extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 
-		if(FlxG.keys.justPressed.A)
+		if(FlxG.keys.justPressed.X #if android || _virtualpad.buttonA.pressed #end)
 		{
 		
 
