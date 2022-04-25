@@ -163,13 +163,9 @@ class WarningState extends MusicBeatState
 		 });
 		 
 		#end
-
-		
-
-		// DEBUG BULLSHIT
 		
                 #if android
-                addVirtualPad(NONE, A);
+                addVirtualPad(NONE, A);     // The Shit Code
                 #end
                 
 		super.create();
