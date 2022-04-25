@@ -159,7 +159,7 @@ class PlayState extends MusicBeatState
 
 	public var iconP1:HealthIcon; //making these public again because i may be stupid
 	public var iconP2:HealthIcon; //what could go wrong?
-	public var camHUD:FlxCamera;
+	public static var camHUD:FlxCamera;
 	public var myCAM:FlxCamera;
 	private var camGame:FlxCamera;
 
