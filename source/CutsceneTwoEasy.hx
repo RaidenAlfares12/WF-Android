@@ -101,8 +101,11 @@ class CutsceneTwoEasy extends MusicBeatState
 
 
 
-		/*var video:MP4Handler = new MP4Handler();
-		video.playMP4(Paths.video('cut2'), new PlayState(), lines, false, false, false);*/
+		var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+		bg.scrollFactor.set();
+		bg.cameras = [camHUD];
+		add(bg);
+		new FlxVideo(Paths.video('cut2'), new PlayState(), lines, false, false, false);
 		
 		
 		
