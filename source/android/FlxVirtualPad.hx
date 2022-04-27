@@ -160,7 +160,6 @@ class FlxVirtualPad extends FlxSpriteGroup
 	public function createButton(x:Float, y:Float, width:Int, height:Int, frames:String):FlxButton
 	{
 		var button = new FlxButton(x, y);
-		var frame = getVirtualInputFrames().getByName(frames);
 		button.frames = FlxTileFrames.fromFrame(frame, FlxPoint.get(width, height));
 		button.resetSizeFromFrame();
 		button.solid = false;
