@@ -78,7 +78,7 @@ class AndroidControlsMenu extends MusicBeatState
 		inputvari.screenCenter(X);
 		add(inputvari);
 
-		var ui_tex = Paths.getSparrowAtlas('shared/images/androidcontrols/menu/arrows');// thanks Andromeda Engine
+		var ui_tex = Paths.getSparrowAtlas('androidcontrols/menu/arrows');// thanks Andromeda Engine
 
 		leftArrow = new FlxSprite(inputvari.x - 60, inputvari.y + 50);
 		leftArrow.frames = ui_tex;
